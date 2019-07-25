@@ -46,6 +46,11 @@ h1 {
     
 }
 
+/* for pushing to right */
+.push {
+    margin-left: auto;
+}
+
 
 @media (max-width: 550px) {
     header {
@@ -62,7 +67,46 @@ h1 {
     h1 {
         font-size: 2em;
         padding-top: 0.5em;
+        /* letter-spacing: 0; */
     }
+}
+
+
+/* ******MAIN****** */
+
+main.container {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+    border: solid 2px black;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.person {
+    border: solid 2px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    border-radius: 5px;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 1em;
 }
 
 
