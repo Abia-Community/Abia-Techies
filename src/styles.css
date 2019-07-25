@@ -4,9 +4,9 @@ html, body {
 
 }
 
-* {
+header, nav, footer, section, article, div {
     box-sizing: border-box;
-}
+  }
 
 
 body {
@@ -22,7 +22,7 @@ header {
     padding: 2em;
     justify-content: space-around;
     align-items: center;
-  
+    /* width: 100% */
 
 }
 
@@ -67,7 +67,6 @@ h1 {
     h1 {
         font-size: 2em;
         padding-top: 0.5em;
-        /* letter-spacing: 0; */
     }
 }
 
@@ -80,19 +79,29 @@ main.container {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 20px;
     border: solid 2px black;
+    /* width: 100%; */
     justify-items: center;
     align-items: center;
+    margin: 2em auto;
+}
+
+@media (min-width: 1100px) {
+    main.container {
+        max-width: 1100px;
+        margin: 2em auto;
+
+    }
 }
 
 
-.person {
+section.person {
     border: solid 2px red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
-    /* margin: 0 auto; */
+    margin: 0 auto;
+    max-width: 20em;
     border-radius: 5px;
 }
 
@@ -109,4 +118,6 @@ main.container {
     margin-top: 1em;
 }
 
-
+/* section.person h2 {
+    font-size: 1em;
+} */
