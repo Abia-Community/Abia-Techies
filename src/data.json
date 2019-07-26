@@ -1,7 +1,7 @@
 [
     {   "number": "1",
         "fullName": "Uchenna Sylvester Okoro",
-        "imageLink": "src/images/Uche.jpg",
+        "imageLink": "./images/Uche.jpg",
         "title": "Web Developer",
         "link": {
             "website": "https://devcareer.io/uchesylvester",
@@ -20,7 +20,7 @@
     },
     {   "number": "1",
         "fullName": "Uchenna Sylvester Okoro",
-        "imageLink": "src/images/Uche.jpg",
+        "imageLink": "./images/Uche.jpg",
         "title": "Web Developer",
         "link": {
             "website": "https://devcareer.io/uchesylvester",
@@ -39,11 +39,11 @@
     },
     {   "number": "1",
         "fullName": "Uchenna Sylvester Okoro",
-        "imageLink": "src/images/Uche.jpg",
+        "imageLink": "https://pbs.twimg.com/profile_images/1134888500652838914/4Ik0KWoz_200x200.jpg",
         "title": "Web Developer",
         "link": {
             "website": "https://devcareer.io/uchesylvester",
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/uchenna-okoro/",
             "github": "https://github.com/UcheSylvester",
             "twitter": "https://twitter.com/UCylvester",
             "facebook": "",
