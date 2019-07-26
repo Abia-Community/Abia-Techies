@@ -172,10 +172,17 @@ p.description {
 
 .stack {
     font-weight: bolder;
+    font-style: italic;
 }
 
 
 
+
+
+.hide {
+    visibility: hidden;
+    /* display: none; */
+}
 .opac {
     color: rgb(54, 49, 49, 0.3)
 }
