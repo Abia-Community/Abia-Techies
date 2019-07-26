@@ -2,20 +2,7 @@
 console.log('working')
 
 const mainContainer = document.querySelector('main.container')
-console.log(mainContainer)
-
-
-function fetchThem() {
-    fetch('persons.json')
-        .then(response => response.json())
-        .then(data => showThem(data))
-}
-
-function showThem(data) {
-    data.forEach( ({links }) => console.log(links))
-}
-
-fetchThem()
+// console.log(mainContainer)
 
 // fetching persons
 const fetchPersons = () => {
@@ -25,6 +12,51 @@ const fetchPersons = () => {
         .catch(err => console.log(err))
 }
 
+// // populating Details page
+// const populateDetailsPage = (e, persons, detailsPage) => {
+//     // console.log(e, persons, detailsPage);
+//     detailsPage.innerHTML = "";
+
+//     const mainInfo = document.querySelector('.main-info')
+    
+//     let id = (e.target === mainInfo) ? mainInfo.parentElement.getAttribute('id') : "";
+//     console.log(e.target, mainInfo);
+    
+//     console.log(id)
+
+//     let details = "helllooooo";
+
+//     detailsPage.insertAdjacentHTML("beforeend", details)
+
+// }
+
+// displaying the details page
+const displayDetailsPage = (persons) => {
+    const mainInfo = document.querySelectorAll('.main-info')
+    const detailsPage = document.querySelector('.details')
+    // console.log(persons)
+
+    mainInfo.forEach(info => info.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // populating detailsPage
+        detailsPage.innerHTML = ""; 
+        let details = "Helloooo";
+
+        detailsPage.insertAdjacentHTML("afterbegin", details)
+        
+        detailsPage.classList.remove('hide');
+        mainContainer.classList.add('blur')
+        console.log(e.target, persons)
+
+
+        // populateDetailsPage(e, persons, detailsPage)
+
+
+    }))
+}
+
+
 /******* 
  * DISPLAYING PERSONS' CARD
  * TODO:
@@ -33,9 +65,13 @@ const fetchPersons = () => {
 
 const displayCards = (persons) => {
     let htmlContent = '';
+    // removing anything in mainContainer
+    mainContainer.innerHTML = "";
+
+    // adding htmlContent to mainContainer
     if(persons) {
         htmlContent = persons.map(({ number, fullName, imageLink, title, links, location }) => `
-        <section class="card">
+        <section class="card" id="person-${number}">
             <div class="main-info">
                 <img class="image" src="${imageLink}" alt="">
 
@@ -55,7 +91,9 @@ const displayCards = (persons) => {
         `).join('')
     }
 
-    mainContainer.insertAdjacentHTML("beforeend", htmlContent)
+    mainContainer.insertAdjacentHTML("beforeend", htmlContent);
+    // calling displayDetailsPage here to get persons
+    displayDetailsPage(persons)
 }
 
 
