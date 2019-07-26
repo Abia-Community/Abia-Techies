@@ -74,6 +74,7 @@ h1 {
 /* ******MAIN****** */
 
 main.container {
+    /* background-color: rgb(255, 246, 246, 0.7); */
     margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -120,24 +121,61 @@ div.main-info {
     margin-top: 1em;
 }
 
-/* DETAILS CARD */
+/* ******DETAILS CARD***** */
 
 section.details {
-    position: fixed;
-    top: 130px;
-    left: 50px;
-    border: 2px red solid;
-    /* border-radius: 10px; */
-    /* width: 15em; */
-    /* height: 10em; */
+    background-color: inherit;
+    color: rgb(73, 69, 69);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    left: 25%;
+    box-shadow: inset 0 0 10px 0 rgb(107, 107, 206, 0.5);
+    width: 50%;
+    height: inherit;
+    padding: 0 1em;
+    border-radius: 5px;
+
+}
+
+@media (max-width: 500px) {
+    section.details {
+        width: 80%;
+        left: 10%;
+
+    }
 }
 
 span.close {
+    align-self: flex-end;
     float: right;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin: 0 -16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:  rgb(107, 107, 206, 0.3);
+    padding: 0.4em;
 }
 
 span.close:hover {
-    background-color: red;
+    background-color:  rgb(107, 107, 206)
 }
 
+p.description {
+    font-weight: bold;
+    text-align: justify;
+
+}
+
+.stack {
+    font-weight: bolder;
+}
+
+
+
+.opac {
+    color: rgb(54, 49, 49, 0.3)
+}
