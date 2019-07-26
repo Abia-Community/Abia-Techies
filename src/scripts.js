@@ -5,7 +5,7 @@ console.log(mainContainer)
 
 
 function fetchThem() {
-    fetch('data.json')
+    fetch('persons.json')
         .then(response => response.json())
         .then(data => showThem(data))
 }
@@ -42,11 +42,13 @@ const displayCards = (persons) => {
                 <p class="title">${title}</p>
             </div>
             <div class="social-media">
-                <a href="${links.website ? links.website : "#"}" target="_blank"><i class="material-icons">face</i></a>
-                <a href="${links.linkedin ? links.linkedin : "#"}" target="_blank"><i class="material-icons">face</i></a>
-                <a href="${links.github ? links.github : "#"}" target="_blank"><i class="material-icons">face</i></a>
+                <a href="${links.website ? links.website : "#"}" target="_blank"><i class="fas fa-globe"></i></a>
+                <a href="${links.linkedin ? links.linkedin : "#"}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="${links.github ? links.github : "#"}" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="${links.linkedin ? links.linkedin : "#"}" target="_blank"><i class="fab fa-twitter"></i></a>
+
             </div>
-            <p class="location">${location.city} ${location.state} ${location.country}</p>
+            <p class="location">${location.city ? location.city : ""} ${location.state ? location.state : ""} ${location.country ? location.country : ""}</p>
         </section>
 
         `).join('')
