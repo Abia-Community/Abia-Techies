@@ -137,11 +137,11 @@ div.main-info:hover {
 }
 
 .social-media {
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 
 .location {
-    padding-bottom: 1em
+    padding-bottom: 0.5em
 }
 
 /* ******DETAILS CARD***** */
@@ -193,10 +193,21 @@ p.description {
 
 }
 
-.stack {
+.title {
     font-weight: bolder;
     /* font-style: italic; */
 }
+
+a.icons {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    padding: 0 0.2em;
+}
+
+/* a.icons i {
+    
+} */
 
 
 
