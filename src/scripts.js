@@ -36,21 +36,57 @@ const displayDetailsPage = (persons) => {
     const detailsPage = document.querySelector('.details')
     // console.log(persons)
 
-    mainInfo.forEach(info => info.addEventListener('click', (e) => {
+    mainInfo.forEach(infoCard => infoCard.addEventListener('click', (e) => {
         e.preventDefault();
 
         // populating detailsPage
         detailsPage.innerHTML = ""; 
-        let details = "Helloooo";
+        let details = "";
+
+        /******
+         * DISPLAYING DETIALS
+         * check the id of card
+         * match with number of person
+         * display the id details that match;
+         * 
+         */
+
+        // getting the id of card
+        let id = infoCard.parentElement.getAttribute('id').split('-')[1];
+        // console.log(id);
+        // finding person number that matches id
+        const clickedPerson = persons.find(person => person.number === id);
+
+        // destructing to get clickedPerson properties
+        const { number, fullName, imageLink, title, links, location, description } = clickedPerson;
+
+        details = `
+            <span class="close">X</span>
+            <div class="main-info">
+                <img class="image" src="${imageLink}" alt="${fullName}">
+
+                <h2 class="full-name">${fullName}</h2>
+                <p class="title">Front ${title}</p>
+            </div>
+
+            <p class="description">${description}</p>
+            <div class="social-media">
+                <a class="icons" href="${links.website ? links.website : "#"}" target="_blank"><i class="fas fa-globe"></i></a>
+                <a class="icons" href="${links.linkedin ? links.linkedin : "#"}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="icons" href="${links.github ? links.github : "#"}" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="icons" href="${links.facebook ? links.facebook : "#"}" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a class="icons" href="${links.medium ? links.medium : "#"}" target="_blank"><i class="fab fa-medium"></i></a>
+
+            </div>
+            <p class="location">${location.city ? location.city : ""} ${location.state ? location.state : ""}, ${location.country ? location.country : ""}</p>
+        `
 
         detailsPage.insertAdjacentHTML("afterbegin", details)
         
         detailsPage.classList.remove('hide');
+        // detailsPage.classList.add('transition')
         mainContainer.classList.add('blur')
-        console.log(e.target, persons)
 
-
-        // populateDetailsPage(e, persons, detailsPage)
 
 
     }))
@@ -83,7 +119,6 @@ const displayCards = (persons) => {
                 <a class="icons" href="${links.linkedin ? links.linkedin : "#"}" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a class="icons" href="${links.github ? links.github : "#"}" target="_blank"><i class="fab fa-github"></i></a>
                 <a class="icons" href="${links.linkedin ? links.linkedin : "#"}" target="_blank"><i class="fab fa-twitter"></i></a>
-
             </div>
             <p class="location">${location.city ? location.city : ""} ${location.state ? location.state : ""}, ${location.country ? location.country : ""}</p>
         </section>

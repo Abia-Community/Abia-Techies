@@ -220,3 +220,7 @@ a.icons {
 .blur {
     color: rgb(54, 49, 49, 0.3)
 }
+
+.transition {
+    transition: 1s;
+}
