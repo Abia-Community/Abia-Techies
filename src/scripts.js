@@ -1,7 +1,6 @@
-
-console.log('working')
-
 const mainContainer = document.querySelector('main.container')
+const detailsPage = document.querySelector('.details')
+
 // console.log(mainContainer)
 
 // fetching persons
@@ -12,28 +11,19 @@ const fetchPersons = () => {
         .catch(err => console.log(err))
 }
 
-// // populating Details page
-// const populateDetailsPage = (e, persons, detailsPage) => {
-//     // console.log(e, persons, detailsPage);
-//     detailsPage.innerHTML = "";
+// closing the details page
+const closeDetailsPage = () => {
+    if(!detailsPage.classList.contains('hide')) {
+        detailsPage.classList.add('hide');
+        mainContainer.classList.remove('blur');
+    }
 
-//     const mainInfo = document.querySelector('.main-info')
-    
-//     let id = (e.target === mainInfo) ? mainInfo.parentElement.getAttribute('id') : "";
-//     console.log(e.target, mainInfo);
-    
-//     console.log(id)
+}
 
-//     let details = "helllooooo";
-
-//     detailsPage.insertAdjacentHTML("beforeend", details)
-
-// }
 
 // displaying the details page
 const displayDetailsPage = (persons) => {
     const mainInfo = document.querySelectorAll('.main-info')
-    const detailsPage = document.querySelector('.details')
     // console.log(persons)
 
     mainInfo.forEach(infoCard => infoCard.addEventListener('click', (e) => {
@@ -87,7 +77,10 @@ const displayDetailsPage = (persons) => {
         // detailsPage.classList.add('transition')
         mainContainer.classList.add('blur')
 
-
+        // closing details page
+        // removeDetailsPage()
+        const closeButton = document.querySelector('span.close');
+        closeButton.addEventListener('click', closeDetailsPage);
 
     }))
 }
