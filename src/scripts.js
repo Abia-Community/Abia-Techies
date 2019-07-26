@@ -4,17 +4,36 @@ const mainContainer = document.querySelector('main.container')
 console.log(mainContainer)
 
 
-const fetchCards = () => {
+function fetchThem() {
     fetch('data.json')
+        .then(response => response.json())
+        .then(data => showThem(data))
+}
+
+function showThem(data) {
+    data.forEach( ({links }) => console.log(links))
+}
+
+fetchThem()
+
+// fetching persons
+const fetchPersons = () => {
+    fetch('persons.json')
         .then(response => response.json())
         .then(data => displayCards(data))
         .catch(err => console.log(err))
 }
 
+/******* 
+ * DISPLAYING PERSONS' CARD
+ * TODO:
+ *      remove the icons if there is no link
+ ******/
+
 const displayCards = (persons) => {
     let htmlContent = '';
     if(persons) {
-        htmlContent = persons.map(({ number, fullName, imageLink, title, links }) => `
+        htmlContent = persons.map(({ number, fullName, imageLink, title, links, location }) => `
         <section class="card">
             <div class="main-info">
                 <img class="image" src="${imageLink}" alt="">
@@ -23,11 +42,11 @@ const displayCards = (persons) => {
                 <p class="title">${title}</p>
             </div>
             <div class="social-media">
-                <a href="" target="_blank"><i class="material-icons">face</i></a>
-                <a><i class="material-icons">face</i></a>
-                <a href="" target="_blank"><i class="material-icons">face</i></a>
+                <a href="${links.website ? links.website : "#"}" target="_blank"><i class="material-icons">face</i></a>
+                <a href="${links.linkedin ? links.linkedin : "#"}" target="_blank"><i class="material-icons">face</i></a>
+                <a href="${links.github ? links.github : "#"}" target="_blank"><i class="material-icons">face</i></a>
             </div>
-            <p class="location">Aba, Abia State</p>
+            <p class="location">${location.city} ${location.state} ${location.country}</p>
         </section>
 
         `).join('')
@@ -37,5 +56,5 @@ const displayCards = (persons) => {
 }
 
 
-document.addEventListener('DOMContentLoaded', fetchCards);
+document.addEventListener('DOMContentLoaded', fetchPersons);
  
