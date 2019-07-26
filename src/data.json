@@ -17,5 +17,43 @@
             "country": "Nigeria"
         },
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quia eius tempore quae facere, minus at nemo odit, quaerat eaque error. Quasi odio quod sequi saepe doloribus porro nesciunt commodi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo atque nemo tenetur ipsa neque quaerat? Eaque, perferendis voluptatem alias nulla sunt quod cum voluptatum amet ea, consectetur incidunt vitae possimus?"
+    },
+    {   "number": "1",
+        "fullName": "Uchenna Sylvester Okoro",
+        "imageLink": "src/images/Uche.jpg",
+        "title": "Web Developer",
+        "link": {
+            "website": "https://devcareer.io/uchesylvester",
+            "linkedin": "",
+            "github": "https://github.com/UcheSylvester",
+            "twitter": "https://twitter.com/UCylvester",
+            "facebook": "",
+            "medium": ""
+        },
+        "location": {
+            "city": "Aba",
+            "state": "Abia",
+            "country": "Nigeria"
+        },
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quia eius tempore quae facere, minus at nemo odit, quaerat eaque error. Quasi odio quod sequi saepe doloribus porro nesciunt commodi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo atque nemo tenetur ipsa neque quaerat? Eaque, perferendis voluptatem alias nulla sunt quod cum voluptatum amet ea, consectetur incidunt vitae possimus?"
+    },
+    {   "number": "1",
+        "fullName": "Uchenna Sylvester Okoro",
+        "imageLink": "src/images/Uche.jpg",
+        "title": "Web Developer",
+        "link": {
+            "website": "https://devcareer.io/uchesylvester",
+            "linkedin": "",
+            "github": "https://github.com/UcheSylvester",
+            "twitter": "https://twitter.com/UCylvester",
+            "facebook": "",
+            "medium": ""
+        },
+        "location": {
+            "city": "Aba",
+            "state": "Abia",
+            "country": "Nigeria"
+        },
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quia eius tempore quae facere, minus at nemo odit, quaerat eaque error. Quasi odio quod sequi saepe doloribus porro nesciunt commodi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo atque nemo tenetur ipsa neque quaerat? Eaque, perferendis voluptatem alias nulla sunt quod cum voluptatum amet ea, consectetur incidunt vitae possimus?"
     }
 ]
