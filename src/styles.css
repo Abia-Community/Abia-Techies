@@ -11,6 +11,7 @@ header, nav, footer, section, article, div {
 
 body {
     background-color: rgb(255, 246, 246);
+    color: rgb(24, 20, 20);
     font-family: Arial, Helvetica, sans-serif
 
 }
@@ -74,7 +75,6 @@ h1 {
 /* ******MAIN****** */
 
 main.container {
-    /* background-color: rgb(255, 246, 246, 0.7); */
     margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -84,7 +84,7 @@ main.container {
     justify-items: center;
     align-items: center;
     margin: 2em auto;
-    justify-content: center
+    /* text-align: center; */
 }
 
 @media (min-width: 1100px) {
@@ -96,9 +96,8 @@ main.container {
 }
 
 
-section.person {
+section.card {
     box-shadow: inset 0 0 10px 0 rgb(107, 107, 206, 0.5);
-    /* border: solid 2px red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,6 +105,14 @@ section.person {
     margin: 0 auto;
     max-width: 20em;
     border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    transition: 1s;
+}
+
+section.card:hover {
+    box-shadow: 0 0 25px 0 rgb(107, 107, 206, 0.5);
+    transition: all 1s;
 }
 
 div.main-info {
@@ -115,10 +122,26 @@ div.main-info {
     align-items: center;
 }
 
+div.main-info:hover {
+    /* background-color:  rgb(112, 84, 84); */
+    /* transition: all 0.5s; */
+    /* border-radius: 5px; */
+    /* padding-top: 0; */
+    cursor: pointer;
+}
+
 .image {
     width: 50%;
     border-radius: 50%;
     margin-top: 1em;
+}
+
+.social-media {
+    padding: 1em 0;
+}
+
+.location {
+    padding-bottom: 1em
 }
 
 /* ******DETAILS CARD***** */
@@ -172,7 +195,7 @@ p.description {
 
 .stack {
     font-weight: bolder;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 
