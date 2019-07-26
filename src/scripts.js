@@ -1,3 +1,4 @@
+console.log('working...')
 const mainContainer = document.querySelector('main.container')
 const detailsPage = document.querySelector('.details')
 
@@ -5,7 +6,7 @@ const detailsPage = document.querySelector('.details')
 
 // fetching persons
 const fetchPersons = () => {
-    fetch('/src/persons.json')
+    fetch('./src/persons.json')
         .then(response => response.json())
         .then(data => displayCards(data))
         .catch(err => console.log(err))
