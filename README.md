@@ -1,6 +1,6 @@
 <div align="center">
 
-![inspireNuggets](/src/assets/images/favicon.png)
+![AbiaTechies](/src/assets/images/favicon.png)
 
 # [Abia-Techies](https://abia-community.github.io/Abia-Techies/index.html)
 
