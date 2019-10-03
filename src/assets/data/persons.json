@@ -2,7 +2,7 @@
   {
     "id": "1",
     "fullName": "Uchenna Sylvester Okoro",
-    "imageLink": "",
+    "imageLink": "https://avatars3.githubusercontent.com/u/38369717?s=460&v=4",
     "title": "Web Developer",
     "links": {
       "website": "",
@@ -17,46 +17,6 @@
       "state": "Abia",
       "country": "Nigeria"
     },
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quia eius tempore quae facere, minus at nemo odit, quaerat eaque error. Quasi odio quod sequi saepe doloribus porro nesciunt commodi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo atque nemo tenetur ipsa neque quaerat? Eaque, perferendis voluptatem alias nulla sunt quod cum voluptatum amet ea, consectetur incidunt vitae possimus?"
-  },
-  {
-    "id": "2",
-    "fullName": "Chiamaka Chiamaka",
-    "imageLink": "",
-    "title": "Web Developer",
-    "links": {
-      "website": "https://devcareer.io/uchesylvester",
-      "linkedin": "",
-      "github": "https://github.com/UcheSylvester",
-      "twitter": "https://twitter.com/UCylvester",
-      "facebook": "",
-      "medium": ""
-    },
-    "location": {
-      "city": "Umuahia",
-      "state": "Abia",
-      "country": ""
-    },
-    "description": "she is a dev lawyer"
-  },
-  {
-    "id": "3",
-    "fullName": "Uchenna Sylvester Okoro",
-    "imageLink": "",
-    "title": "Web Developer",
-    "links": {
-      "website": "https://devcareer.io/uchesylvester",
-      "linkedin": "https://www.linkedin.com/in/uchenna-okoro/",
-      "github": "https://github.com/UcheSylvester",
-      "twitter": "https://twitter.com/UCylvester",
-      "facebook": "",
-      "medium": ""
-    },
-    "location": {
-      "city": "Aba",
-      "state": "Abia",
-      "country": "Nigeria"
-    },
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quia eius tempore quae facere, minus at nemo odit, quaerat eaque error. Quasi odio quod sequi saepe doloribus porro nesciunt commodi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo atque nemo tenetur ipsa neque quaerat? Eaque, perferendis voluptatem alias nulla sunt quod cum voluptatum amet ea, consectetur incidunt vitae possimus?"
+    "description": "I am a web developer passionate about open source, teaching and growing a sustainable tech ecosystem"
   }
 ]

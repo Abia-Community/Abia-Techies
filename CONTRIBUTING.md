@@ -32,8 +32,10 @@ This is a growing list of **software developers, designers, product managers, te
 
 ## Adding Your Details
 
+1. Add you name to the [Contributors' List](CONTRIBUTORS.md)
+
 1. To add your name to the list, simply open `persons.json` file in the `src/assets/data` folder, and then add your own row at the bottom, using the below template:  
-( **Don't include the square brackets "[ ]" !!! They are just there to indicate an example placeholder.** )
+   ( **Don't include the square brackets "[ ]" !!! They are just there to indicate an example placeholder.** )
 
 ```moonscript
   {
