@@ -1,7 +1,6 @@
 html, body {
     margin: 0;
     padding: 0;
-
 }
 
 header, nav, footer, section, article, div {
@@ -96,6 +95,8 @@ main.container {
 }
 
 
+/* give the cards a specific responsive width */
+
 section.card {
     box-shadow: inset 0 0 10px 0 rgb(107, 107, 206, 0.5);
     display: flex;
@@ -103,12 +104,19 @@ section.card {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 20em;
+    width: 50%;
+    /* max-width: 20em; */
     border-radius: 5px;
     padding: 1em;
     text-align: center;
     transition: 1s;
 }
+
+/* @media (max-width: 400px) {
+    section.card {
+        width: 40%;
+    }
+} */
 
 section.card:hover {
     box-shadow: 0 0 25px 0 rgb(107, 107, 206, 0.5);
@@ -123,10 +131,6 @@ div.main-info {
 }
 
 div.main-info:hover {
-    /* background-color:  rgb(112, 84, 84); */
-    /* transition: all 0.5s; */
-    /* border-radius: 5px; */
-    /* padding-top: 0; */
     cursor: pointer;
 }
 
