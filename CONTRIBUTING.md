@@ -12,7 +12,7 @@ This is a growing list of **software developers, designers, product managers, te
 
 - Git or any equivalent Version Control System
 - Code Editor (VsCode, Sublime Text, Atom e.t.c)
-- Little knowledge command line
+- Little knowledge command line and open source contribution (_do no panic if you don't kown this yet, the next section (**Getting Stated**)_ explains this)
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ This is a growing list of **software developers, designers, product managers, te
 
 ## Adding Your Details
 
-To add your name to the list, simply open `persons.json` file in the `src/assets` folder, and then add your own row at the bottom, using the below template:  
+1. To add your name to the list, simply open `persons.json` file in the `src/assets/data` folder, and then add your own row at the bottom, using the below template:  
 ( **Don't include the square brackets "[ ]" !!! They are just there to indicate an example placeholder.** )
 
 ```moonscript
@@ -64,33 +64,15 @@ To add your name to the list, simply open `persons.json` file in the `src/assets
 - If you do not want to fill some of the fields, leave them blank (e.g. `state: "",`).
 - Your pull request will only be accepted if it follows the example above. It **cannot** have anything else.
 
-Please submit a Pull Request for your row to be added to this list. If you are unsure how to do this, please check out _Contributing To Open Source_ video in the course curriculum.
-
-1.  We have created a list of markdown (`.md`) files for different categories of learning resources. Find the category/categories related to the resources you want to add in the root directory
-
-2.  Check if the resources you want to add is already included. If not, then you can proceed!
-
-3.  Add your resources at the end, follow the pattern of the already existing resources. It should include:
-
-    - **Name** of the resources (as a link to the resource page)
-    - **A brief description** of its content and other related information.
-
-    Here are **some examples**: <br>
-    `- [JavaScript30](https://javascript30.com/): A 30-day coding challenge in which you will build 30 things using vanilla JavaScript`
-
-    `- [mmtuts](https://www.youtube.com/user/TheCharmefis/featured): **_mmtuts_** (a.k.a MultiMedia Tutorials) aims to provide tutorials spanning the gamut of programming, video editing/production, animation, and graphic design.`
-
-4.  If you want to create a new category for your resources, kindly [**open an issue**](https://github.com/zero-to-mastery/resources/issues) to let the project maintainers know of this new category before creating one.
-
-5.  Open a **pull request**, with a short descriptive `branch name` and `commit messages`
+2.  Open a **pull request**, with a short descriptive `branch name` and `commit messages`. If you are unsure of how to do this, checkout the[**Getting Started**](##Getting-Started) section
 
 ## Submitting a Fix
 
-If you ever noticed a bug or anything worth fixing, feel free to [**open an issue**](https://github.com/zero-to-mastery/resources/issues) with enough details of the bug, steps to replicate it and screenshots if possible.
+If you ever noticed a bug or anything worth fixing, feel free to [**open an issue**](https://github.com/Abia-Community/Abia-Techies/issues) with enough details of the bug, steps to replicate it and screenshots if possible.
 
 ## Proposing New Features
 
-Have some new exciting features you'd like to add? Let our maintainers know first. [**Open an issue**](https://github.com/zero-to-mastery/resources/issues) describing this new feature and why you think it should be included!
+Have some new exciting features you'd like to add? Let our maintainers know first. [**Open an issue**](https://github.com/Abia-Community/Abia-Techies/issues) describing this new feature and why you think it should be included!
 
 ## Helpful Resources
 
@@ -104,4 +86,4 @@ Have some new exciting features you'd like to add? Let our maintainers know firs
 
 [MIT](https://opensource.org/licenses/MIT)
 
-[@imsualeh](https://github.com/imsualeh)
+[@UcheSylvester](https://github.com/UcheSylvester)

@@ -4,7 +4,7 @@ const detailsPage = document.querySelector('.details')
 
 // fetching persons
 const fetchPersons = () => {
-    fetch('assets/persons.json')
+    fetch('src/assets/data/persons.json')
         .then(response => response.json())
         .then(data => displayCards(data))
         .catch(err => console.log(err))
