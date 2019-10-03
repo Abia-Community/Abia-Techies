@@ -19,7 +19,6 @@ const closeDetailsPage = () => {
 
 }
 
-
 // displaying the details page
 const displayDetailsPage = (persons) => {
     const mainInfo = document.querySelectorAll('.main-info')
@@ -99,10 +98,11 @@ const displayCards = (persons) => {
 
     // adding htmlContent to mainContainer
     if (persons) {
-        htmlContent = persons.map(({ number, fullName, imageLink, title, links, location }) => `
-        <section class="card" id="person-${number}">
+        console.log
+        htmlContent = persons.map(({ id, fullName, imageLink, title, links, location }) => `
+        <section class="card" id="person-${id}">
             <div class="main-info">
-                <img class="image" src="${imageLink}" alt="">
+                <img class="image" src="${imageLink ? imageLink : 'src/assets/images/default_avatar.jpg'}" alt="">
 
                 <h2 class="full-name">${fullName}</h2>
                 <p class="title">${title}</p>
