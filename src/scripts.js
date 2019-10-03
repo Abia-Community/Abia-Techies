@@ -1,7 +1,6 @@
 const mainContainer = document.querySelector('main.container')
 const detailsPage = document.querySelector('.details')
 
-// console.log(mainContainer)
 
 // fetching persons
 const fetchPersons = () => {
@@ -89,7 +88,8 @@ const displayDetailsPage = (persons) => {
 /******* 
  * DISPLAYING PERSONS' CARD
  * TODO:
- *      remove the icons if there is no link
+ * remove the icons if there is no link
+ * add a placeholder image for when there is no image
  ******/
 
 const displayCards = (persons) => {
