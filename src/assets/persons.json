@@ -1,5 +1,5 @@
 [
-    {   "number": "1",
+    {   "id": "1",
         "fullName": "Uchenna Sylvester Okoro",
         "imageLink": "https://pbs.twimg.com/profile_images/1134888500652838914/4Ik0KWoz_400x400.jpg",
         "title": "Web Developer",
@@ -18,7 +18,7 @@
         },
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quia eius tempore quae facere, minus at nemo odit, quaerat eaque error. Quasi odio quod sequi saepe doloribus porro nesciunt commodi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo atque nemo tenetur ipsa neque quaerat? Eaque, perferendis voluptatem alias nulla sunt quod cum voluptatum amet ea, consectetur incidunt vitae possimus?"
     },
-    {   "number": "2",
+    {   "id": "2",
         "fullName": "Chiamaka Chiamaka",
         "imageLink": "https://pbs.twimg.com/profile_images/1154528635665244160/IxnwSngq_400x400.jpg",
         "title": "Web Developer",
@@ -37,7 +37,7 @@
         },
         "description": "she is a dev lawyer"
     },
-    {   "number": "3",
+    {   "id": "3",
         "fullName": "Uchenna Sylvester Okoro",
         "imageLink": "https://pbs.twimg.com/profile_images/1134888500652838914/4Ik0KWoz_200x200.jpg",
         "title": "Web Developer",

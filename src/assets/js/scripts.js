@@ -4,7 +4,7 @@ const detailsPage = document.querySelector('.details')
 
 // fetching persons
 const fetchPersons = () => {
-    fetch('persons.json')
+    fetch('assets/persons.json')
         .then(response => response.json())
         .then(data => displayCards(data))
         .catch(err => console.log(err))
@@ -12,7 +12,7 @@ const fetchPersons = () => {
 
 // closing the details page
 const closeDetailsPage = () => {
-    if(!detailsPage.classList.contains('hide')) {
+    if (!detailsPage.classList.contains('hide')) {
         detailsPage.classList.add('hide');
         mainContainer.classList.remove('blur');
     }
@@ -29,7 +29,7 @@ const displayDetailsPage = (persons) => {
         e.preventDefault();
 
         // populating detailsPage
-        detailsPage.innerHTML = ""; 
+        detailsPage.innerHTML = "";
         let details = "";
 
         /******
@@ -71,7 +71,7 @@ const displayDetailsPage = (persons) => {
         `
 
         detailsPage.insertAdjacentHTML("afterbegin", details)
-        
+
         detailsPage.classList.remove('hide');
         // detailsPage.classList.add('transition')
         mainContainer.classList.add('blur')
@@ -98,7 +98,7 @@ const displayCards = (persons) => {
     mainContainer.innerHTML = "";
 
     // adding htmlContent to mainContainer
-    if(persons) {
+    if (persons) {
         htmlContent = persons.map(({ number, fullName, imageLink, title, links, location }) => `
         <section class="card" id="person-${number}">
             <div class="main-info">
@@ -126,4 +126,4 @@ const displayCards = (persons) => {
 
 
 document.addEventListener('DOMContentLoaded', fetchPersons);
- 
+
