@@ -18,5 +18,26 @@
       "country": "Nigeria"
     },
     "description": "I am a web developer passionate about open source, teaching and growing a sustainable tech ecosystem"
+  },
+
+  {
+    "id": "2",
+    "fullName": "Nwujiokah Godstime",
+    "imageLink": "https://avatars0.githubusercontent.com/u/48327540?s=460&v=4",
+    "title": "Web Developer",
+    "links": {
+      "website": "",
+      "linkedin": "https://www.linkedin.com/in/godstime-onyibe-357523181/",
+      "github": "https://github.com/Godstyme",
+      "twitter": "https://twitter.com/GodstimeOnyibe",
+      "facebook": "https://web.facebook.com/Godstimeonyibelawrence",
+      "medium": ""
+    },
+    "location": {
+      "city": "Aba",
+      "state": "Abia",
+      "country": "Nigeria"
+    },
+    "description": "I am web developer proficient in HTML, CSS, Bootstrap, JavaScript and JQuery. I love playing around with the DOM and is currently learning Vue"
   }
 ]
